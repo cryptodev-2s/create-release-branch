@@ -7,7 +7,7 @@ on:
 jobs:
   publish-preview:
     if: ${{ github.event.issue.pull_request && startsWith(github.event.comment.body, '@metamaskbot publish-preview') }}
-    uses: MetaMask/github-tools/.github/workflows/publish-preview.yml@prepare-preview-builds-action
+    uses: MetaMask/github-tools/.github/workflows/publish-preview.yml@fix/preview-publish-security
     with:
       is-monorepo: false
       dry-run: true
